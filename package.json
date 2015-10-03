@@ -1,30 +1,26 @@
 {
-  "name": "procore-client",
+  "name": "stacked-react-boilerplate",
   "version": "0.0.0",
-  "description": "Procore client",
+  "description": "Redux React Boilerplate",
   "main": "server.js",
   "scripts": {
     "backend:dev": "babel-node server",
     "webpack:build": "webpack --context . --progress --colors -p --config services/webpack/configs",
-    "doc:components": "react-docgen app -o app/views/docs/utils/docgen.json -x jsx --pretty",
     "test:watch": "npm test -- --watch",
-    "publish:github": "babel-node services/github",
-    "build:clean": "rm ./build/*",
     "build": "NODE_ENV='production' npm run webpack:build",
     "dev": "NODE_ENV='development' npm run backend:dev",
-    "test": "mocha 'redux/**/__tests__/*.js' --recursive --compilers js:babel/register --require 'app/_shared/tests/testHelper.js'",
-    "release": "NODE_ENV='production' npm run webpack:build; npm run publish:github; npm run build:clean"
+    "test": "mocha 'redux/**/__tests__/*.js' --recursive --compilers js:babel/register --require 'app/_shared/tests/testHelper.js'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/procore/wrench.git"
+    "url": "git+https://github.com/mboperator/stacked-react-boilerplate.git"
   },
-  "author": "Procore Frontend Team",
+  "author": "mboperator",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/procore/wrench/issues"
+    "url": "https://github.com/mboperator/stacked-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/procore/wrench#readme",
+  "homepage": "https://github.com/mboperator/stacked-react-boilerplate#readme",
   "devDependencies": {
     "accepts": "^1.2.13",
     "babel-core": "^5.8.24",
@@ -63,7 +59,6 @@
     "sass-loader": "^2.0.1",
     "steno": "^0.4.2",
     "style-loader": "^0.12.4",
-    "vary": "^1.0.1",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.11.0"
   },
@@ -78,24 +73,16 @@
     "lodash": "^3.10.1",
     "q": "^1.4.1",
     "ramda": "^0.17.1",
-    "rc-tooltip": "^2.7.1",
     "react": "^0.13.3",
     "react-bootstrap": "^0.25.2",
-    "react-docgen": "^2.1.2",
     "react-redux": "^2.1.2",
     "react-router": "^1.0.0-rc1",
     "react-router-bootstrap": "^0.19.0",
-    "react-waypoint": "^1.0.3",
-    "react-widgets": "^2.8.1",
-    "react-window-mixins": "0.0.6",
     "redux": "^3.0.0",
     "redux-actions": "^0.8.0",
-    "redux-batched-updates": "^0.1.0",
     "redux-immutable": "^1.3.7",
     "redux-logger": "^1.0.8",
-    "redux-promise": "^0.5.0",
     "redux-simple-promise": "^2.0.2",
-    "redux-thunk": "^0.1.0",
     "uuid": "^2.0.1"
   }
 }
