@@ -17,7 +17,7 @@ export default class AppNav extends React.Component {
   render() {
     const { menuItems } = this.props;
     return (
-      <Navbar brand='Stacked Boilerplate.'>
+      <Navbar brand='MB'>
         <Nav>
           {menuItems.map((item, i) => {
             return (

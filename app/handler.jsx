@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Col} from 'react-bootstrap';
-import NavBar from './components/NavBar';
+import AppNav from './components/AppNav';
 
 class App extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class App extends React.Component {
       <div style={{margin: '0 auto'}}>
         <Grid>
           <Col xs={12} md={12}>
-            <NavBar/>
+            <AppNav/>
           </Col>
           <Col xs={12} md={12}>
             {this.props.children}

@@ -35,6 +35,10 @@ module.exports = function(env, webpackPort, host){
           test: /\.sass$/,
           loader: 'style-loader!css-loader!sass-loader?indentedSyntax',
         },
+        {
+          test: /\.scss$/,
+          loader: 'style-loader!css-loader!sass-loader',
+        },
       ],
     },
 

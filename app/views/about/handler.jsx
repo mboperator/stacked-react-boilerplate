@@ -1,17 +1,17 @@
 import React from 'react';
 
-export default class App extends React.Component {
-  static propTypes = {
-    name: React.PropTypes.string,
-  }
-
+export default class About extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <h1>Hope this works</h1>
+      <div>
+        <h2>
+          With <i className='fa fa-heart'></i> from Carpinteria.
+        </h2>
+      </div>
     );
   }
 }
