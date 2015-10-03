@@ -21,10 +21,6 @@ module.exports = function production() {
         manifestVariable: 'webpackManifest',
       }),
       new webpack.NoErrorsPlugin(),
-      new webpack.DefinePlugin({
-        __NODE_ENV__: JSON.stringify(env),
-        __BASE_URL__:'/2/project'
-      }),
     ],
   };
 };

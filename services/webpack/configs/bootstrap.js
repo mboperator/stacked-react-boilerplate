@@ -14,9 +14,6 @@ module.exports = function(env, webpackPort, host){
       app: [
         './app.js',
       ],
-      bundle: [
-        './bundle.js',
-      ],
     },
 
     module: {

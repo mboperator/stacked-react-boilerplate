@@ -14,11 +14,6 @@ module.exports = function development(env, webpackPort, host) {
         'webpack/hot/dev-server',
         './app.js'
       ],
-      bundle: [
-        'webpack-dev-server/client?' + url,
-        'webpack/hot/dev-server',
-        './bundle.js'
-      ],
     },
 
     output: {
@@ -42,7 +37,6 @@ module.exports = function development(env, webpackPort, host) {
       new webpack.NoErrorsPlugin(),
       new webpack.DefinePlugin({
         __NODE_ENV__: JSON.stringify(env),
-        __BASE_URL__:'/2/project'
       }),
     ],
 
