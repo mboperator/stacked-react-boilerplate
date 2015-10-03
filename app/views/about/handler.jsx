@@ -1,32 +1,17 @@
 import React from 'react';
-import Base from './layout/base';
 
-export default class Index extends React.Component {
+export default class App extends React.Component {
+  static propTypes = {
+    name: React.PropTypes.string,
+  }
+
   constructor(props) {
     super(props);
   }
 
-  yieldMain() {
-    return (
-      <div>
-        {this.props.children}
-      </div>
-    );
-  }
-
-  getNavItems() {
-    return [
-      { label: 'Home', path: '/' },
-      { label: 'About', path: '/about/' },
-    ];
-  }
-
   render() {
     return (
-      <Base navItems={this.getNavItems()}>
-        {this.yieldMain()}
-      </Base>
+      <h1>Hope this works</h1>
     );
   }
 }
-

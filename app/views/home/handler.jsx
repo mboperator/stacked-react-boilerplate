@@ -8,8 +8,8 @@ class HomeHandler extends React.Component {
       <Well>
         <h1>App coming soon...</h1>
       </Well>
-    )
+    );
   }
-};
+}
 
 export default HomeHandler;
