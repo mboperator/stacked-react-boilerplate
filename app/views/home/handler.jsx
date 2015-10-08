@@ -19,15 +19,9 @@ class HomeHandler extends React.Component {
         </Jumbotron>
 
         <Row>
-          <BigCard
-            imageDirection='right'
-            header='React'
-            imageUrl='http://formatjs.io/img/react.svg'>
+          <SmallCard header='React'>
             <p>A library for creating user interfaces</p>
-          </BigCard>
-        </Row>
-
-        <Row>
+          </SmallCard>
           <SmallCard header='Redux'>
             <p>Functional state management</p>
           </SmallCard>

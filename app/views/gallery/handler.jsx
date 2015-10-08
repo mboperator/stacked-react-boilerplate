@@ -9,7 +9,7 @@ export default class About extends React.Component {
     return (
       <div>
         <h2>
-          About
+          Gallery
         </h2>
       </div>
     );

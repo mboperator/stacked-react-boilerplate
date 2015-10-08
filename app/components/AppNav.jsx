@@ -7,6 +7,8 @@ export default class AppNav extends React.Component {
     menuItems: [
       {label: 'Home', path: '/home'},
       {label: 'About', path: '/about'},
+      {label: 'Blog', path: '/blog'},
+      {label: 'Gallery', path: '/gallery'},
     ],
   }
 

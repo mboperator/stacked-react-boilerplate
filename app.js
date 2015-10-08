@@ -4,6 +4,8 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 
 const Home = require('./app/views/home');
 const About = require('./app/views/about');
+const Blog = require('./app/views/blog');
+const Gallery = require('./app/views/gallery');
 
 const rootRoute = {
   component: 'div',
@@ -14,6 +16,8 @@ const rootRoute = {
       childRoutes: [
         Home,
         About,
+        Blog,
+        Gallery,
       ],
       indexRoute: Home,
     },
