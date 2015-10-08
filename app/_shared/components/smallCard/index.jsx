@@ -1,7 +1,7 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
-export default class BigCard extends React.Component {
+export default class SmallCard extends React.Component {
   static propTypes = {
     header: React.PropTypes.string,
     imageUrl: React.PropTypes.string,

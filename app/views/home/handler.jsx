@@ -1,7 +1,6 @@
 import React from 'react';
-import { Jumbotron, Button, Col, Row } from 'react-bootstrap';
+import { Jumbotron, Button, Row } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import BigCard from 'components/bigcard';
 import SmallCard from 'components/smallCard';
 
 class HomeHandler extends React.Component {
@@ -10,7 +9,7 @@ class HomeHandler extends React.Component {
       <span>
         <Jumbotron>
           <h1>Stacked.</h1>
-          <p>This is a bootstrap based boilerplate focused on productivity and developer experience.</p>
+          <p>A bootstrap based boilerplate focused on developer experience.</p>
           <p>
             <LinkContainer to='/about'>
               <Button bsStyle='primary'>Learn more</Button>
