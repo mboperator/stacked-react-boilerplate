@@ -1,6 +1,8 @@
 import React from 'react';
-import { Jumbotron, Button, Col } from 'react-bootstrap';
+import { Jumbotron, Button, Col, Row } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import BigCard from 'components/bigcard';
+import SmallCard from 'components/smallCard';
 
 class HomeHandler extends React.Component {
   render() {
@@ -16,20 +18,23 @@ class HomeHandler extends React.Component {
           </p>
         </Jumbotron>
 
-        <Col md={4}>
-          <h2>React</h2>
-          <p>A library for creating user interfaces</p>
-        </Col>
+        <Row>
+          <BigCard
+            imageDirection='right'
+            header='React'
+            imageUrl='http://formatjs.io/img/react.svg'>
+            <p>A library for creating user interfaces</p>
+          </BigCard>
+        </Row>
 
-        <Col md={4}>
-          <h2>Redux</h2>
-          <p>Functional state management</p>
-        </Col>
-
-        <Col md={4}>
-          <h2>Hot Loading</h2>
-          <p>Instant feedback</p>
-        </Col>
+        <Row>
+          <SmallCard header='Redux'>
+            <p>Functional state management</p>
+          </SmallCard>
+          <SmallCard header='Hot Loading'>
+            <p>Injects CSS and Javascript changes</p>
+          </SmallCard>
+        </Row>
       </span>
     );
   }

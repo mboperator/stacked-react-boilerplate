@@ -7,4 +7,6 @@ html(lang="en")
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
     script(src='http://#{locals.host}:#{locals.webpackPort}/build/app.hot.js')
   body
-    #root
+    #root(style='min-height: 98vh')
+    footer(style='text-align: center;')
+      p From Carpinteria, with #[i(class='fa fa-heart' style='color: #D64541;')]
