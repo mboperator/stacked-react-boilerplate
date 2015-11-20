@@ -3,12 +3,14 @@ import { Jumbotron, Button, Row } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import SmallCard from 'components/smallCard';
 
+require('./home.sass');
+
 class HomeHandler extends React.Component {
   render() {
     return (
       <span>
         <Jumbotron>
-          <h1>Stacked.</h1>
+          <h1 className='header'>Stacked.</h1>
           <p>A bootstrap based boilerplate focused on developer experience.</p>
           <p>
             <LinkContainer to='/about'>
